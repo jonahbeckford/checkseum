@@ -4,7 +4,7 @@
 #include "crc32.h"
 #include "crc24.h"
 
-#ifdef ARCH_SIXTYFOUR
+#if defined(ARCH_SIXTYFOUR) || defined(TARGET_C_ARCH_SIXTYFOUR)
 /* XXX(dinosaure): un-boxed version for 64-bits architecture. */
 
 #define __define_checkseum(name)                                                                    \
